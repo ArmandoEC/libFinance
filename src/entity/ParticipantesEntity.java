@@ -22,6 +22,15 @@ public class ParticipantesEntity implements Serializable {
 	
 	@Column(name = "NOME", length = 60)
     private String nome;
+	
+	@Column(name = "USUARIO", length = 60)
+    private String usuario;
+	
+	@Column(name = "SENHA", length = 60)
+    private String senha;
+	
+	@Column(name = "ISUSUARIO", length = 1)
+    private String isUsuario;
 
 	public int getCodigo() {
 		return codigo;
@@ -38,6 +47,29 @@ public class ParticipantesEntity implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
+	public String getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getIsUsuario() {
+		return isUsuario;
+	}
+
+	public void setIsUsuario(String isUsuario) {
+		this.isUsuario = isUsuario;
+	}
 	
 }
