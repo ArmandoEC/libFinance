@@ -1,4 +1,4 @@
-package util.jpa;
+package util.connectionFactory;
 
 import java.sql.Connection;
 

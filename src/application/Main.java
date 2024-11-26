@@ -7,15 +7,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
+
 	@Override
-	public void start(Stage stage) {
+	public void start(Stage primaryStage) {
 		try {
-			Parent parent = FXMLLoader.load(getClass().getResource("/gui/Main.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
-			stage.show();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Main.fxml"));
+			Parent parent = loader.load();
+			Scene mainScene = new Scene(parent);
+			primaryStage.setScene(mainScene);
+			primaryStage.initStyle(StageStyle.UNDECORATED);
+			primaryStage.show();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
