@@ -1,32 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MenuPrincipalController">
-   <content>
-      <HBox prefHeight="768.0" prefWidth="1366.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="14.0" prefHeight="200.0" prefWidth="516.0" style="-fx-background-color: #737373;" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane fx:id="menuPane" prefHeight="727.0" prefWidth="466.0">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="760.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../images/menuPrincipal/icon-menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="50.0" prefHeight="550.0" prefWidth="51.0" style="-fx-background-color: white;">
+         <children>
+            <VBox prefHeight="550.0" prefWidth="61.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                <children>
-                  <ImageView fx:id="buttonMenu" fitHeight="150.0" fitWidth="32.0" layoutX="420.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/icon-menu.png" />
+                        <Image url="@../images/menuPrincipal/icon-homePage.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="23.0" layoutY="17.0" text="Menu">
-                     <font>
-                        <Font name="SansSerif Regular" size="24.0" />
-                     </font>
-                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/menuPrincipal/icon-cadastro.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
                </children>
-            </Pane>
+            </VBox>
          </children>
-      </HBox>
-   </content>
-</ScrollPane>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="50.0" prefHeight="550.0" prefWidth="229.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <JFXButton layoutX="15.0" layoutY="14.0" prefHeight="30.0" prefWidth="199.0" style="-fx-border-color: black;" text="Home Page">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
