@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TIPOPARTICIPANTE")
-public class TipoParticipanteEntity implements Serializable {
+@Table(name = "PARTICIPANTE_TIPO")
+public class ParticipanteTipoEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -23,10 +23,10 @@ public class TipoParticipanteEntity implements Serializable {
     @Column(name = "NOME", length = 60)
     private String nome;
 
-    public TipoParticipanteEntity() {
+    public ParticipanteTipoEntity() {
     }
 
-    public TipoParticipanteEntity(String nome) {
+    public ParticipanteTipoEntity(String nome) {
         this.nome = nome;
     }
 

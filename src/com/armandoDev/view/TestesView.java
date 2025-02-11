@@ -27,6 +27,17 @@ public class TestesView extends javax.swing.JFrame {
         jTextFieldNome1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        rSButtonBuscar1 = new rojeru_san.rsbutton.RSButtonRoundRipple();
+        rSButtonAlterar1 = new rojeru_san.rsbutton.RSButtonRoundRipple();
+        rSButtonNovo1 = new rojeru_san.rsbutton.RSButtonRoundRipple();
+        rSTextFullRound1 = new rojeru_san.rsfield.RSTextFullRound();
+        rSTextFullRound2 = new rojeru_san.rsfield.RSTextFullRound();
+        rSLabelImageAdicionar = new rojeru_san.rslabel.RSLabelImage();
+        rSLabelImageBuscar = new rojeru_san.rslabel.RSLabelImage();
+        rSLabelImageCancelar = new rojeru_san.rslabel.RSLabelImage();
+        rSLabelImageEditar = new rojeru_san.rslabel.RSLabelImage();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -56,7 +67,7 @@ public class TestesView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabelTitle)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, 1210, Short.MAX_VALUE)
+                .addComponent(jLabelTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, 1190, Short.MAX_VALUE)
                 .addGap(10, 10, 10))
         );
         jPanelHeaderLayout.setVerticalGroup(
@@ -94,7 +105,6 @@ public class TestesView extends javax.swing.JFrame {
         rSButtonAlterar.setColorHover(new java.awt.Color(255, 155, 5));
         rSButtonAlterar.setPreferredSize(new java.awt.Dimension(150, 40));
 
-        jTextFieldNome.setBackground(new java.awt.Color(255, 255, 255));
         jTextFieldNome.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextFieldNome.setText("editavel");
         jTextFieldNome.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -117,33 +127,102 @@ public class TestesView extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setText("Código:");
 
+        rSButtonBuscar1.setBackground(new java.awt.Color(56, 182, 255));
+        rSButtonBuscar1.setText("Buscar");
+        rSButtonBuscar1.setColorHover(new java.awt.Color(0, 151, 239));
+        rSButtonBuscar1.setPreferredSize(new java.awt.Dimension(150, 40));
+
+        rSButtonAlterar1.setBackground(new java.awt.Color(255, 189, 89));
+        rSButtonAlterar1.setText("Voltar");
+        rSButtonAlterar1.setColorHover(new java.awt.Color(255, 155, 5));
+        rSButtonAlterar1.setPreferredSize(new java.awt.Dimension(150, 40));
+
+        rSButtonNovo1.setBackground(new java.awt.Color(126, 217, 87));
+        rSButtonNovo1.setText("Novo");
+        rSButtonNovo1.setColorHover(new java.awt.Color(85, 187, 42));
+        rSButtonNovo1.setPreferredSize(new java.awt.Dimension(150, 40));
+
+        rSTextFullRound1.setForeground(new java.awt.Color(0, 0, 0));
+        rSTextFullRound1.setBorderColor(new java.awt.Color(0, 0, 0));
+        rSTextFullRound1.setCaretPosition(0);
+        rSTextFullRound1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        rSTextFullRound1.setPhColor(new java.awt.Color(0, 0, 0));
+        rSTextFullRound1.setPlaceholder("");
+
+        rSTextFullRound2.setForeground(new java.awt.Color(0, 0, 0));
+        rSTextFullRound2.setBorderColor(new java.awt.Color(0, 0, 0));
+        rSTextFullRound2.setCaretPosition(0);
+        rSTextFullRound2.setEnabled(false);
+        rSTextFullRound2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        rSTextFullRound2.setPhColor(new java.awt.Color(0, 0, 0));
+        rSTextFullRound2.setPlaceholder("");
+
+        rSLabelImageAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/armandoDev/images/adicionar-24x24.png"))); // NOI18N
+
+        rSLabelImageBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/armandoDev/images/buscar-24x24.png"))); // NOI18N
+
+        rSLabelImageCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/armandoDev/images/cancelar-24x24.png"))); // NOI18N
+
+        rSLabelImageEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/armandoDev/images/editar-24x24.png"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel3.setText("Código:");
+
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel4.setText("Código:");
+
         javax.swing.GroupLayout jPanelBackgroundLayout = new javax.swing.GroupLayout(jPanelBackground);
         jPanelBackground.setLayout(jPanelBackgroundLayout);
         jPanelBackgroundLayout.setHorizontalGroup(
             jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 1365, Short.MAX_VALUE)
+            .addComponent(jPanelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 1345, Short.MAX_VALUE)
             .addGroup(jPanelBackgroundLayout.createSequentialGroup()
                 .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
-                        .addGap(198, 198, 198)
-                        .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1)))
                     .addGroup(jPanelBackgroundLayout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addComponent(rSButtonNovo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextFieldNome1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)
                             .addGroup(jPanelBackgroundLayout.createSequentialGroup()
-                                .addComponent(rSButtonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(27, 27, 27)
-                                .addComponent(rSButtonAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                                        .addComponent(rSButtonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(rSButtonAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rSButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                                        .addGap(11, 11, 11)
+                                        .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel1)
+                                            .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(18, 18, 18)
-                                .addComponent(rSButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(rSTextFullRound1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(rSButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3)))))
+                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                        .addGap(397, 397, 397)
+                        .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                                .addComponent(rSButtonNovo1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(rSButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel2))))
+                                .addComponent(rSButtonBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(rSButtonAlterar1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(268, 268, 268)
+                                .addComponent(rSLabelImageAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(rSTextFullRound2, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSLabelImageBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(rSLabelImageCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(rSLabelImageEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelBackgroundLayout.setVerticalGroup(
@@ -158,21 +237,46 @@ public class TestesView extends javax.swing.JFrame {
                     .addComponent(rSButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rSButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
+                .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3))
                 .addGap(4, 4, 4)
-                .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
+                .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSTextFullRound1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addComponent(jLabel4)
+                .addGap(4, 4, 4)
+                .addComponent(rSTextFullRound2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
                 .addComponent(jLabel2)
                 .addGap(4, 4, 4)
                 .addComponent(jTextFieldNome1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(488, Short.MAX_VALUE))
+                .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rSButtonBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSButtonAlterar1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSButtonNovo1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanelBackgroundLayout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addGroup(jPanelBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rSLabelImageBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSLabelImageAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSLabelImageCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSLabelImageEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(432, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelBackground, javax.swing.GroupLayout.DEFAULT_SIZE, 1367, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelBackground, javax.swing.GroupLayout.DEFAULT_SIZE, 1347, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,6 +303,8 @@ public class TestesView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelTitle;
     private javax.swing.JLabel jLabelTitle1;
     private javax.swing.JPanel jPanelBackground;
@@ -206,10 +312,19 @@ public class TestesView extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldNome;
     private javax.swing.JTextField jTextFieldNome1;
     private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonAlterar;
+    private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonAlterar1;
     private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonBuscar;
+    private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonBuscar1;
     private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonCancelar;
     private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonNovo;
+    private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonNovo1;
     private rojeru_san.rsbutton.RSButtonRoundRipple rSButtonSalvar;
+    private rojeru_san.rslabel.RSLabelImage rSLabelImageAdicionar;
+    private rojeru_san.rslabel.RSLabelImage rSLabelImageBuscar;
+    private rojeru_san.rslabel.RSLabelImage rSLabelImageCancelar;
+    private rojeru_san.rslabel.RSLabelImage rSLabelImageEditar;
+    private rojeru_san.rsfield.RSTextFullRound rSTextFullRound1;
+    private rojeru_san.rsfield.RSTextFullRound rSTextFullRound2;
     // End of variables declaration//GEN-END:variables
 
     

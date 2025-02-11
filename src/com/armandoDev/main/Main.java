@@ -1,11 +1,11 @@
 package com.armandoDev.main;
 
-import com.armandoDev.view.LoadingView;
+import com.armandoDev.internal.LoadingInternal;
 
 public class Main {
     
     public static void main(String[] args) {        
-        LoadingView view = new LoadingView(null, true);
+        LoadingInternal view = new LoadingInternal(null, true);
         view.setVisible(true);
     }
     
